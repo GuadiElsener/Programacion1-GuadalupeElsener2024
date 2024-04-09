@@ -1,0 +1,14 @@
+C:\Users\LENOVO\OneDrive\Documentos\Universidad\Ejercicio1Pseudocodigo\Ejercicio1Pseudocodigo\bin\Debug\net8.0\Ejercicio1Pseudocodigo.exe
+C:\Users\LENOVO\OneDrive\Documentos\Universidad\Ejercicio1Pseudocodigo\Ejercicio1Pseudocodigo\bin\Debug\net8.0\Ejercicio1Pseudocodigo.deps.json
+C:\Users\LENOVO\OneDrive\Documentos\Universidad\Ejercicio1Pseudocodigo\Ejercicio1Pseudocodigo\bin\Debug\net8.0\Ejercicio1Pseudocodigo.runtimeconfig.json
+C:\Users\LENOVO\OneDrive\Documentos\Universidad\Ejercicio1Pseudocodigo\Ejercicio1Pseudocodigo\bin\Debug\net8.0\Ejercicio1Pseudocodigo.dll
+C:\Users\LENOVO\OneDrive\Documentos\Universidad\Ejercicio1Pseudocodigo\Ejercicio1Pseudocodigo\bin\Debug\net8.0\Ejercicio1Pseudocodigo.pdb
+C:\Users\LENOVO\OneDrive\Documentos\Universidad\Ejercicio1Pseudocodigo\Ejercicio1Pseudocodigo\obj\Debug\net8.0\Ejercicio1Pseudocodigo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LENOVO\OneDrive\Documentos\Universidad\Ejercicio1Pseudocodigo\Ejercicio1Pseudocodigo\obj\Debug\net8.0\Ejercicio1Pseudocodigo.AssemblyInfoInputs.cache
+C:\Users\LENOVO\OneDrive\Documentos\Universidad\Ejercicio1Pseudocodigo\Ejercicio1Pseudocodigo\obj\Debug\net8.0\Ejercicio1Pseudocodigo.AssemblyInfo.cs
+C:\Users\LENOVO\OneDrive\Documentos\Universidad\Ejercicio1Pseudocodigo\Ejercicio1Pseudocodigo\obj\Debug\net8.0\Ejercicio1Pseudocodigo.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\OneDrive\Documentos\Universidad\Ejercicio1Pseudocodigo\Ejercicio1Pseudocodigo\obj\Debug\net8.0\Ejercicio1Pseudocodigo.dll
+C:\Users\LENOVO\OneDrive\Documentos\Universidad\Ejercicio1Pseudocodigo\Ejercicio1Pseudocodigo\obj\Debug\net8.0\refint\Ejercicio1Pseudocodigo.dll
+C:\Users\LENOVO\OneDrive\Documentos\Universidad\Ejercicio1Pseudocodigo\Ejercicio1Pseudocodigo\obj\Debug\net8.0\Ejercicio1Pseudocodigo.pdb
+C:\Users\LENOVO\OneDrive\Documentos\Universidad\Ejercicio1Pseudocodigo\Ejercicio1Pseudocodigo\obj\Debug\net8.0\Ejercicio1Pseudocodigo.genruntimeconfig.cache
+C:\Users\LENOVO\OneDrive\Documentos\Universidad\Ejercicio1Pseudocodigo\Ejercicio1Pseudocodigo\obj\Debug\net8.0\ref\Ejercicio1Pseudocodigo.dll
