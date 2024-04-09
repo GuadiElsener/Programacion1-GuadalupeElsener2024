@@ -1,5 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
-//Calcular la suma de dos números
+//Calcular la suma de dos númerosj
 
 Console.Write("Ingrese un número: ");
 int numero1 = Int32.Parse (Console.ReadLine());
