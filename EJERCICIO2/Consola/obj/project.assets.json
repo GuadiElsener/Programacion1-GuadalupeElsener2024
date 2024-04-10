@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\LENOVO\\OneDrive\\Documentos\\Universidad\\EJERCICIO2\\Consola\\Consola.csproj",
+      "projectUniqueName": "C:\\Users\\LENOVO\\OneDrive\\Documentos\\Universidad\\Programacion1-GuadalupeElsener2024\\EJERCICIO2\\Consola\\Consola.csproj",
       "projectName": "Consola",
-      "projectPath": "C:\\Users\\LENOVO\\OneDrive\\Documentos\\Universidad\\EJERCICIO2\\Consola\\Consola.csproj",
+      "projectPath": "C:\\Users\\LENOVO\\OneDrive\\Documentos\\Universidad\\Programacion1-GuadalupeElsener2024\\EJERCICIO2\\Consola\\Consola.csproj",
       "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\LENOVO\\OneDrive\\Documentos\\Universidad\\EJERCICIO2\\Consola\\obj\\",
+      "outputPath": "C:\\Users\\LENOVO\\OneDrive\\Documentos\\Universidad\\Programacion1-GuadalupeElsener2024\\EJERCICIO2\\Consola\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
