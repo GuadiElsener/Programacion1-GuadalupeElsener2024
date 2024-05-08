@@ -28,7 +28,17 @@ namespace Isograma
     {
         public static bool IsIsogram(string word)
         {
-            throw new NotImplementedException("You need to implement this function.");
+            word = word.ToLower();
+            char[] letras = word.Replace("-", "").Replace(" ", "").ToCharArray();
+
+            for (int i = 0; i < letras.Length; i++)
+            {
+                if (word.IndexOf(letras[i]) != word.LastIndexOf(letras[i]))
+                {
+                    return false;
+                }
+            }
+            return true;
         }
     }
 }

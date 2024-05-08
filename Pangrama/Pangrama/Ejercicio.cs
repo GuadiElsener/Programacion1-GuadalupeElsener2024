@@ -19,7 +19,20 @@
     {
         public static bool IsPangram(string input)
         {
-            throw new NotImplementedException();
+            input = input.ToUpper();
+            List<char> chars = new List<char>();
+
+            foreach (char c in input)
+            {
+                if (char.IsLetter(c))
+                {
+                    if (!chars.Contains(c))
+                    {
+                        chars.Add(c);
+                    }
+                }
+            }
+            return chars.Count == 26;
         }
     }
 }

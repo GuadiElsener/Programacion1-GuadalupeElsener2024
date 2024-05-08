@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Isograma")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e0c196a7f2b350e262fbed4b5f06e8790184582a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0fd9f15891337dba63f166dbdab1353fb0695a74")]
 [assembly: System.Reflection.AssemblyProductAttribute("Isograma")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Isograma")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
