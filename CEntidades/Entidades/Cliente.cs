@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CEntidades.Entidades
 {
-    public class Cliente
+    public class Cliente: Persona
     {
         public bool SocioCliente {  get; set; }
     }
