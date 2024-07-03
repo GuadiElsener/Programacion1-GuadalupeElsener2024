@@ -5,19 +5,19 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CDatos.Repositories
 {
-    public class ExampleRepository : Repository<Example>, IExampleRepository
+    public class AutorRepository : Repository<Autor>, IAutorRepository
     {
 
-        public ExampleRepository(LibreriaContext context) : base(context)
+        public AutorRepository(LibreriaContext context) : base(context)
         {
             
         }
 
-        public async Task<List<Example>> GetAll()
+        public async Task<List<Autor>> GetAll()
         {
             try
             {
-                return await _context.Example.ToListAsync();
+                return await _context.Autor.ToListAsync();
             }
             catch (Exception)
             {

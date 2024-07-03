@@ -2,8 +2,8 @@
 
 namespace CLogica.Contracts
 {
-    public interface IExampleLogic
+    public interface IAutorLogic
     {
-        Task<List<Example>> GetAll();
+        Task<List<Autor>> GetAll();
     }
 }

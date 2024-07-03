@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace CEntidades.Entidades
 {
-    public class Autor: Persona
+    public class Autor
     {
-        public int CantidadLibrosEscritos { get; set; }
+        public int IdAutor { get; set; }
+        public string Biografia { get; set; }
+        public Persona Persona { get; set; }
+        public ICollection<Libro> Libros { get; set; }
     }
 }

@@ -4,6 +4,7 @@ using CDatos.Contexts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CDatos.Migrations
 {
     [DbContext(typeof(LibreriaContext))]
-    partial class ExampleContextModelSnapshot : ModelSnapshot
+    [Migration("20240702230551_DB Update, actualizadas las entidades y agregadas la entidades GeneroLibro y AutorLibro")]
+    partial class DBUpdateactualizadaslasentidadesyagregadaslaentidadesGeneroLibroyAutorLibro
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -35,15 +38,8 @@ namespace CDatos.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("IdPersona")
-                        .HasColumnType("int");
-
                     b.HasKey("IdAutor")
                         .HasName("PK_ID_AUTOR");
-
-                    b.HasIndex("IdPersona")
-                        .IsUnique()
-                        .HasFilter("[IdPersona] IS NOT NULL");
 
                     b.ToTable("Autor");
                 });
@@ -56,18 +52,8 @@ namespace CDatos.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdAutorLibro"));
 
-                    b.Property<int>("IdAutor")
-                        .HasColumnType("int");
-
-                    b.Property<int>("IdLibro")
-                        .HasColumnType("int");
-
                     b.HasKey("IdAutorLibro")
                         .HasName("PK_ID_AUTORLIBRO");
-
-                    b.HasIndex("IdAutor");
-
-                    b.HasIndex("IdLibro");
 
                     b.ToTable("AutorLibro");
                 });
@@ -80,21 +66,14 @@ namespace CDatos.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdCliente"));
 
-                    b.Property<bool>("EsSocio")
+                    b.Property<bool>("PagaIVA")
                         .HasColumnType("bit");
 
-                    b.Property<int?>("IdPersona")
-                        .HasColumnType("int");
-
-                    b.Property<bool>("PagaIVA")
+                    b.Property<bool>("SocioCliente")
                         .HasColumnType("bit");
 
                     b.HasKey("IdCliente")
                         .HasName("PK_ID_CLIENTE");
-
-                    b.HasIndex("IdPersona")
-                        .IsUnique()
-                        .HasFilter("[IdPersona] IS NOT NULL");
 
                     b.ToTable("Cliente");
                 });
@@ -311,13 +290,8 @@ namespace CDatos.Migrations
                     b.Property<DateTime>("FechaLimite")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("IdCliente")
-                        .HasColumnType("int");
-
                     b.HasKey("IdPrestamo")
                         .HasName("PK_ID_PRESTAMO");
-
-                    b.HasIndex("IdCliente");
 
                     b.ToTable("Prestamo");
                 });
@@ -337,62 +311,6 @@ namespace CDatos.Migrations
                         .HasName("PK_ID_VENTA");
 
                     b.ToTable("Venta");
-                });
-
-            modelBuilder.Entity("CEntidades.Entidades.Autor", b =>
-                {
-                    b.HasOne("CEntidades.Entidades.Persona", "Persona")
-                        .WithOne("Autor")
-                        .HasForeignKey("CEntidades.Entidades.Autor", "IdPersona");
-
-                    b.Navigation("Persona");
-                });
-
-            modelBuilder.Entity("CEntidades.Entidades.AutorLibro", b =>
-                {
-                    b.HasOne("CEntidades.Entidades.Autor", null)
-                        .WithMany()
-                        .HasForeignKey("IdAutor")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("CEntidades.Entidades.Libro", null)
-                        .WithMany()
-                        .HasForeignKey("IdLibro")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("CEntidades.Entidades.Cliente", b =>
-                {
-                    b.HasOne("CEntidades.Entidades.Persona", "Persona")
-                        .WithOne("Cliente")
-                        .HasForeignKey("CEntidades.Entidades.Cliente", "IdPersona");
-
-                    b.Navigation("Persona");
-                });
-
-            modelBuilder.Entity("CEntidades.Entidades.Prestamo", b =>
-                {
-                    b.HasOne("CEntidades.Entidades.Cliente", "Cliente")
-                        .WithMany("Prestamos")
-                        .HasForeignKey("IdCliente")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Cliente");
-                });
-
-            modelBuilder.Entity("CEntidades.Entidades.Cliente", b =>
-                {
-                    b.Navigation("Prestamos");
-                });
-
-            modelBuilder.Entity("CEntidades.Entidades.Persona", b =>
-                {
-                    b.Navigation("Autor");
-
-                    b.Navigation("Cliente");
                 });
 #pragma warning restore 612, 618
         }

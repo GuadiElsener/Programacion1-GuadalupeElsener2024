@@ -6,8 +6,12 @@ using System.Threading.Tasks;
 
 namespace CEntidades.Entidades
 {
-    public class Empleado: Persona
+    public class Empleado
     {
-        public int SueldoVendedor { get; set; }
+        public int IdEmpleado { get; set; }
+        public string Cargo { get; set; }
+        public DateTime FechaIngreso { get; set; }
+        public float Sueldo { get; set; }
+       
     }
 }

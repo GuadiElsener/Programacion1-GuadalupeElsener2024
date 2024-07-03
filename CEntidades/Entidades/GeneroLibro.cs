@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace CEntidades.Entidades
 {
-    public class FormaPago
+    public class GeneroLibro
     {
-        public int IdFormaPago { get; set; }
-        public string Descripcion { get; set; }
+        public int IdGeneroLibro { get; set; }
     }
 }

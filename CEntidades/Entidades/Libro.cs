@@ -9,8 +9,11 @@ namespace CEntidades.Entidades
     public class Libro
     {
         public int IdLibro { get; set; }
-        public string NombreLibro { get; set; }
-        public string DescripcionLibro { get; set; }
-        public DateTime FechaCreacionLibro { get; set; }
+        public string ISBN { get; set; }
+        public string Titulo { get; set; }
+        public string Descripcion { get; set; }
+        public DateTime FechaPublicacion { get; set; }
+        public float PrecioVenta { get; set; }
+        public ICollection<Autor> Autores { get; set; }
     }
 }

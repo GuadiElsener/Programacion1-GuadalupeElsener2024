@@ -9,8 +9,8 @@ namespace CEntidades.Entidades
     public class Editorial
     {
         public int IdEditorial { get; set; }
-        public string NombreEditorial { get; set;}
-        public string DireccionEditorial { get; set; }
-        public string ContactoEditorial { get; set; }
+        public string Nombre { get; set;}
+        public string Direccion { get; set; }
+        public string Contacto { get; set; }
     }
 }
